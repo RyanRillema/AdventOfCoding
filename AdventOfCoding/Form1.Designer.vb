@@ -26,6 +26,8 @@ Partial Class Form1
         Me.tlpMain = New System.Windows.Forms.TableLayoutPanel()
         Me.cmdDay11 = New System.Windows.Forms.Button()
         Me.lbDay11 = New System.Windows.Forms.Label()
+        Me.cmdDay2 = New System.Windows.Forms.Button()
+        Me.lbDay2 = New System.Windows.Forms.Label()
         Me.tlpFull.SuspendLayout()
         Me.tlpMain.SuspendLayout()
         Me.SuspendLayout()
@@ -53,6 +55,8 @@ Partial Class Form1
         Me.tlpMain.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.tlpMain.Controls.Add(Me.cmdDay11, 0, 0)
         Me.tlpMain.Controls.Add(Me.lbDay11, 1, 0)
+        Me.tlpMain.Controls.Add(Me.cmdDay2, 0, 1)
+        Me.tlpMain.Controls.Add(Me.lbDay2, 1, 1)
         Me.tlpMain.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tlpMain.Location = New System.Drawing.Point(0, 0)
         Me.tlpMain.Margin = New System.Windows.Forms.Padding(0)
@@ -68,6 +72,7 @@ Partial Class Form1
         Me.tlpMain.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
         Me.tlpMain.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
         Me.tlpMain.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
+        Me.tlpMain.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.tlpMain.Size = New System.Drawing.Size(800, 450)
         Me.tlpMain.TabIndex = 0
         '
@@ -92,6 +97,27 @@ Partial Class Form1
         Me.lbDay11.Text = "Answer 1"
         Me.lbDay11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'cmdDay2
+        '
+        Me.cmdDay2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.cmdDay2.Location = New System.Drawing.Point(0, 45)
+        Me.cmdDay2.Margin = New System.Windows.Forms.Padding(0)
+        Me.cmdDay2.Name = "cmdDay2"
+        Me.cmdDay2.Size = New System.Drawing.Size(400, 45)
+        Me.cmdDay2.TabIndex = 2
+        Me.cmdDay2.Text = "Day 2"
+        Me.cmdDay2.UseVisualStyleBackColor = True
+        '
+        'lbDay2
+        '
+        Me.lbDay2.AutoSize = True
+        Me.lbDay2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbDay2.Location = New System.Drawing.Point(403, 45)
+        Me.lbDay2.Name = "lbDay2"
+        Me.lbDay2.Size = New System.Drawing.Size(394, 45)
+        Me.lbDay2.TabIndex = 3
+        Me.lbDay2.Text = "Answer 2"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -111,4 +137,6 @@ Partial Class Form1
     Friend WithEvents tlpMain As TableLayoutPanel
     Friend WithEvents cmdDay11 As Button
     Friend WithEvents lbDay11 As Label
+    Friend WithEvents cmdDay2 As Button
+    Friend WithEvents lbDay2 As Label
 End Class

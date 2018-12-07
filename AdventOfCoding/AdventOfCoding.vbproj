@@ -75,6 +75,8 @@
   <ItemGroup>
     <Compile Include="Day11.vb" />
     <Compile Include="Day2.vb" />
+    <Compile Include="Day22.vb" />
+    <Compile Include="Day3.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>

@@ -24,6 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.tlpFull = New System.Windows.Forms.TableLayoutPanel()
         Me.tlpMain = New System.Windows.Forms.TableLayoutPanel()
+        Me.lbDay32 = New System.Windows.Forms.Label()
         Me.lbDay31 = New System.Windows.Forms.Label()
         Me.lbDay22 = New System.Windows.Forms.Label()
         Me.cmdDay11 = New System.Windows.Forms.Button()
@@ -33,7 +34,8 @@ Partial Class Form1
         Me.cmdDay22 = New System.Windows.Forms.Button()
         Me.cmdDay31 = New System.Windows.Forms.Button()
         Me.cmdDay32 = New System.Windows.Forms.Button()
-        Me.lbDay32 = New System.Windows.Forms.Label()
+        Me.cmdDay41 = New System.Windows.Forms.Button()
+        Me.lbDay41 = New System.Windows.Forms.Label()
         Me.tlpFull.SuspendLayout()
         Me.tlpMain.SuspendLayout()
         Me.SuspendLayout()
@@ -59,6 +61,7 @@ Partial Class Form1
         Me.tlpMain.ColumnCount = 2
         Me.tlpMain.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.tlpMain.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.tlpMain.Controls.Add(Me.lbDay41, 1, 5)
         Me.tlpMain.Controls.Add(Me.lbDay32, 1, 4)
         Me.tlpMain.Controls.Add(Me.lbDay31, 1, 3)
         Me.tlpMain.Controls.Add(Me.lbDay22, 1, 2)
@@ -69,6 +72,7 @@ Partial Class Form1
         Me.tlpMain.Controls.Add(Me.cmdDay22, 0, 2)
         Me.tlpMain.Controls.Add(Me.cmdDay31, 0, 3)
         Me.tlpMain.Controls.Add(Me.cmdDay32, 0, 4)
+        Me.tlpMain.Controls.Add(Me.cmdDay41, 0, 5)
         Me.tlpMain.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tlpMain.Location = New System.Drawing.Point(0, 0)
         Me.tlpMain.Margin = New System.Windows.Forms.Padding(0)
@@ -87,6 +91,17 @@ Partial Class Form1
         Me.tlpMain.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.tlpMain.Size = New System.Drawing.Size(800, 450)
         Me.tlpMain.TabIndex = 0
+        '
+        'lbDay32
+        '
+        Me.lbDay32.AutoSize = True
+        Me.lbDay32.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbDay32.Location = New System.Drawing.Point(403, 180)
+        Me.lbDay32.Name = "lbDay32"
+        Me.lbDay32.Size = New System.Drawing.Size(394, 45)
+        Me.lbDay32.TabIndex = 9
+        Me.lbDay32.Text = "Answer 3.2"
+        Me.lbDay32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lbDay31
         '
@@ -185,16 +200,27 @@ Partial Class Form1
         Me.cmdDay32.Text = "Day 3.2"
         Me.cmdDay32.UseVisualStyleBackColor = True
         '
-        'lbDay32
+        'cmdDay41
         '
-        Me.lbDay32.AutoSize = True
-        Me.lbDay32.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lbDay32.Location = New System.Drawing.Point(403, 180)
-        Me.lbDay32.Name = "lbDay32"
-        Me.lbDay32.Size = New System.Drawing.Size(394, 45)
-        Me.lbDay32.TabIndex = 9
-        Me.lbDay32.Text = "Answer 3.2"
-        Me.lbDay32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.cmdDay41.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.cmdDay41.Location = New System.Drawing.Point(0, 225)
+        Me.cmdDay41.Margin = New System.Windows.Forms.Padding(0)
+        Me.cmdDay41.Name = "cmdDay41"
+        Me.cmdDay41.Size = New System.Drawing.Size(400, 45)
+        Me.cmdDay41.TabIndex = 10
+        Me.cmdDay41.Text = "Day 4.1"
+        Me.cmdDay41.UseVisualStyleBackColor = True
+        '
+        'lbDay41
+        '
+        Me.lbDay41.AutoSize = True
+        Me.lbDay41.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbDay41.Location = New System.Drawing.Point(403, 225)
+        Me.lbDay41.Name = "lbDay41"
+        Me.lbDay41.Size = New System.Drawing.Size(394, 45)
+        Me.lbDay41.TabIndex = 11
+        Me.lbDay41.Text = "Answer 4.1"
+        Me.lbDay41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Form1
         '
@@ -223,4 +249,6 @@ Partial Class Form1
     Friend WithEvents cmdDay31 As Button
     Friend WithEvents lbDay32 As Label
     Friend WithEvents cmdDay32 As Button
+    Friend WithEvents lbDay41 As Label
+    Friend WithEvents cmdDay41 As Button
 End Class

@@ -3,6 +3,7 @@
     Private oDay2 As Day2
     Private oDay22 As Day22
     Private oDay31 As Day3
+    Private oDay41 As Day4
 
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -10,6 +11,7 @@
         oDay2 = New Day2
         oDay22 = New Day22
         oDay31 = New Day3
+        oDay41 = New Day4
     End Sub
 
     Private Sub cmdDay11_Click(sender As Object, e As EventArgs) Handles cmdDay11.Click
@@ -38,5 +40,9 @@
         oDay31.ReadFile()
         oDay31.ReadFile2()
         lbDay31.Text = oDay31.sFound
+    End Sub
+
+    Private Sub cmdDay41_Click(sender As Object, e As EventArgs) Handles cmdDay41.Click
+        oDay41.ReadFile()
     End Sub
 End Class
